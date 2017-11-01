@@ -4,7 +4,8 @@
   "description": "an app to share your favorite song",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "start": "nodemon Server/server.js"
   },
   "repository": {
     "type": "git",
