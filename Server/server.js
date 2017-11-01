@@ -7,5 +7,5 @@ app.listen(3000, function() {
 
 app.get('/', function(req, res) {
   console.log('GET received to /');
-  res.send('Hello World!');
+  res.send('Welcome to Bonfire!');
 })
