@@ -9,3 +9,8 @@ app.get('/', function(req, res) {
   console.log('GET received to /');
   res.send('Welcome to Bonfire!');
 })
+
+app.get('/users', function(req, res) {
+  console.log('GET received to /users');
+  res.send();
+})
