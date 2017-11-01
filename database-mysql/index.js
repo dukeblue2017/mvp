@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
   database: 'bonfire_db'
 });
 
-var bonfireQuery = function(query, callback) {
+var queryBonfire = function(query, callback) {
   connection.query(query, function(err, results) {
     if (err) {
       callback(err, null);
@@ -17,4 +17,4 @@ var bonfireQuery = function(query, callback) {
   });
 };
 
-module.exports.dbQuery = bonfireQuery;
+module.exports.queryDB = queryBonfire;
