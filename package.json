@@ -1,0 +1,32 @@
+{
+  "name": "bonfire",
+  "version": "1.0.0",
+  "description": "an app to share your favorite song",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dukeblue2017/hratx30-mvp.git"
+  },
+  "keywords": [
+    "music",
+    "sharing",
+    "song",
+    "favorite",
+    "bonfire",
+    "social",
+    "listen",
+    "listening"
+  ],
+  "author": "Carter Duncan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dukeblue2017/hratx30-mvp/issues"
+  },
+  "homepage": "https://github.com/dukeblue2017/hratx30-mvp#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
