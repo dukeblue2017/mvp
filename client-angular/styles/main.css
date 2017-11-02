@@ -1,8 +1,11 @@
 body {
-    background-color: lightblue;
+    background-color: #e0cece;
+    font-family: verdana;
+    color: #a51d1d;
+    text-align: center
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+.heading {
+  font-size: 500%;
+  padding-bottom: 5%;
 }

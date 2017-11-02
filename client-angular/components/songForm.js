@@ -21,9 +21,9 @@ angular.module('bonfire')
       <div>
         <label>Username:</label>
         <input type="text" ng-model="yourName" placeholder="Enter name here">
-        <h1>Username: {{yourName}}</h1>
+        <h1>{{yourName}}</h1>
         <button ng-click="$ctrl.makeAPost()">
-          im a button
+          Submit New User
         </button>
       </div>
     `

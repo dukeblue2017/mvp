@@ -8,7 +8,7 @@ angular.module('bonfire', [])
     controller: 'appCtrl',
     template: `
       <div>
-        <h3>this is the app</h3>
+        <div class="heading">bonfire.fm</div>
         <song-form></song-form>
       </div>
     `
