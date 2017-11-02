@@ -9,6 +9,7 @@ angular.module('bonfire', [])
     template: `
       <div>
         <div class="heading">bonfire.fm</div>
+        <hr>
         <song-form></song-form>
       </div>
     `

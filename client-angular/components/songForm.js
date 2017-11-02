@@ -18,7 +18,7 @@ angular.module('bonfire')
     bindings: {},
     controller: 'songFormCtrl',
     template: `
-      <div>
+      <div class="songform">
         <label>Username:</label>
         <input type="text" ng-model="yourName" placeholder="Enter name here">
         <h1>{{yourName}}</h1>

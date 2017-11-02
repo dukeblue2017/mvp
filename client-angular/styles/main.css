@@ -3,15 +3,20 @@ html {
 }
 
 body {
-    width: 80%;
-    height: 500px;
-    margin: auto;
-    font-family: verdana;
-    text-align: center;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  font-family: verdana;
+  text-align: center;
+  margin-top: 3%;
 }
 
 .heading {
   font-size: 500%;
-  margin-bottom: 2%;
   color: FireBrick;
+  margin-bottom: -10px;
+}
+
+.songform {
+  margin-top: 3%;
 }
