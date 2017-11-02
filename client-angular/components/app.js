@@ -1,6 +1,5 @@
 angular.module('bonfire', [])
   .controller('appCtrl', function() {
-    console.log('hi')
     this.todos = [1,2,3,4]
   })
   .component('app', {

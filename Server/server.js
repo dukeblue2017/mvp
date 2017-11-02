@@ -39,8 +39,8 @@ app.get('/users', function(req, res) {
 
 app.post('/users', function(req, res) {
   console.log('POST received to /users');
-  console.log('req.body', req.body);
-  // need to change 'Hans'
+  var username = req.body.username;
+  console.log(username);
   var sqlText = 'INSERT INTO users (name) VALUES (\'Hans\')';
   dbIndex.queryDB(sqlText, function(err, result) {
     if (err) {
