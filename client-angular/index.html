@@ -1,18 +1,20 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="bonfire">
 
 <head>
   <script src="../node_modules/angular/angular.js"></script>
 </head>
 
 <body>
-  <div> Hello world </div>
-  <div>
+
+  <!-- <div>
     <label>Username:</label>
     <input type="text" ng-model="yourName" placeholder="Enter name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
-  </div>
-</body>
+    <h1>Username: {{yourName}}</h1>
+  </div> -->
 
+  <div ng-controller="postController">
+  </div>
+
+</body>
 </html>
