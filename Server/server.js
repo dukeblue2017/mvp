@@ -40,7 +40,11 @@ app.get('/users', function(req, res) {
 app.post('/users', function(req, res) {
   console.log('POST received to /users');
   var username = req.body.username;
-  var sqlText = 'INSERT INTO users (name) VALUES (\'' + username + '\');';
+  var songTitle = req.body.songTitle || null;
+  var songArtist = req.body.songArtist || null;
+  var songAlbum = req.body.songAlbum || null;
+  // could use backticks here:
+  var sqlText = `INSERT INTO users (name, song_title, song_artist, song_album) VALUES (\'' + username + '\', songTitle, SongArtist, SongAlbum);`;
   dbIndex.queryDB(sqlText, function(err, result) {
     if (err) {
       console.log('err', err);
