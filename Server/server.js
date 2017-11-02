@@ -40,11 +40,10 @@ app.get('/users', function(req, res) {
 app.post('/users', function(req, res) {
   console.log('POST received to /users');
   var username = req.body.username;
-  console.log(username);
-  var sqlText = 'INSERT INTO users (name) VALUES (\'Hans\')';
+  var sqlText = 'INSERT INTO users (name) VALUES (\'' + username + '\');';
   dbIndex.queryDB(sqlText, function(err, result) {
     if (err) {
-      console.log('err');
+      console.log('err', err);
       res.sendStatus(500);
     } else {
       res.sendStatus(201);
