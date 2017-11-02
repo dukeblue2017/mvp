@@ -1,11 +1,17 @@
+html {
+  background-color: Azure;
+}
+
 body {
-    background-color: #e0cece;
+    width: 80%;
+    height: 500px;
+    margin: auto;
     font-family: verdana;
-    color: #a51d1d;
-    text-align: center
+    text-align: center;
 }
 
 .heading {
   font-size: 500%;
-  padding-bottom: 5%;
+  margin-bottom: 2%;
+  color: FireBrick;
 }
