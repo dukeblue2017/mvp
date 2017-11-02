@@ -62,7 +62,15 @@ app.get('/profile', function(req, res) {
 
 app.post('/profile', function(req, res) {
   console.log('POST received to /profile');
-  // this needs to update the user's favorite song;
-  res.send()
-
+  // this needs to update the user's favorite song_title, song_artist, and song_album
+  // also, user needs to be dynamic
+  var sqlText = 'UPDATE users SET song_title = \'Toes\' WHERE name = \'Hans\'';
+  dbIndex.queryDB(sqlText, function(err, result) {
+    if (err) {
+      console.log('err');
+      res.sendStatus(500);
+    } else {
+      res.sendStatus(201);
+    }
+  })
 })
