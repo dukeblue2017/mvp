@@ -4,7 +4,8 @@ angular.module('bonfire')
     this.makeAPost = function() {
       $http({
         method: 'POST',
-        url: '/users'
+        url: '/users',
+        data: {info: 'tesssstttttt'}
       }).then(function successCallback(response) {
           console.log(
             'success posted to users', response

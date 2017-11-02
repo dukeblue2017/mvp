@@ -2,13 +2,15 @@ var express = require('express');
 var app = express();
 var dbIndex = require('../database-mysql/')
 var path = require('path')
+var bodyParser = require('body-parser')
 
 app.listen(3000, function() {
   console.log('Bonfire listening on port 3000');
 })
 
-app.use(express.static(path.join(__dirname, '../client-angular')))
-app.use('/scripts', express.static(path.join(__dirname, '../node_modules')))
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '../client-angular')));
+app.use('/scripts', express.static(path.join(__dirname, '../node_modules')));
 
 app.get('/', function(req, res) {
   console.log('GET received to /');
@@ -37,6 +39,7 @@ app.get('/users', function(req, res) {
 
 app.post('/users', function(req, res) {
   console.log('POST received to /users');
+  console.log('req.body', req.body);
   // need to change 'Hans'
   var sqlText = 'INSERT INTO users (name) VALUES (\'Hans\')';
   dbIndex.queryDB(sqlText, function(err, result) {
