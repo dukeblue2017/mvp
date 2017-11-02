@@ -6,15 +6,10 @@ angular.module('bonfire')
         method: 'POST',
         url: '/users'
       }).then(function successCallback(response) {
-          // this callback will be called asynchronously
           console.log(
             'success posted to users', response
           )
-
-          // when the response is available
         }, function errorCallback(response) {
-          // called asynchronously if an error occurs
-          // or server returns response with an error status.
           console.log('error posting to users: ', response)
         });
     }
