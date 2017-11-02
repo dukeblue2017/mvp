@@ -5,7 +5,12 @@ angular.module('bonfire')
       $http({
         method: 'POST',
         url: '/users',
-        data: { username: who }
+        data: {
+          username: who,
+          songTitle: 'abc',
+          songArtist: '123',
+          songAlbum: 'abc123'
+        }
       }).then(function successCallback(response) {
           console.log('success posting to users', response)
         }, function errorCallback(response) {
